@@ -2,7 +2,7 @@
 /**
 * main: Entry
 * Description: Programming is like building a multilingual puzzle
-* Return: Always o (success)
+* Return: Always 0 (success)
 */
 int main(void)
 {
