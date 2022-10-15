@@ -6,15 +6,16 @@
 */
 int main(void)
 {
-	int i, j;
+	int i;
+	int j;
 
 	i = 97;
 	j = 65;
-	for (i = 65; (i <= 90; i++)
+	for (i = 65; i <= 90; i++)
 	{
 		putchar(i);
 	}
-	for (j = 97; j < 122; j++)
+	for (j = 97; j <= 122; j++)
 	{
 		putchar(j);
 	}
