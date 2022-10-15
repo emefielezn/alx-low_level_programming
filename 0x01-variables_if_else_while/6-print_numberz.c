@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (success)
 */
-inte main(void)
+int main(void)
 {
 	int i = 48;
 
