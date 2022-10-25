@@ -2,7 +2,7 @@
 /**
  * _puts - prints a string to stdout
  * @str: string to print
- * On success: returns no error
+ * Retunr: nothing
  */
 void _puts(char *str)
 {
