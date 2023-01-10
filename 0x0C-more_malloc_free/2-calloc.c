@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * _calloc - Allocates memory for an array of a certain number
@@ -10,17 +11,15 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *mem;
-	char *filler;
-	unsigned int index;
-
+	char *arr;
+	unsigned int i;
+	
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	mem = malloc(size * nmemb);
-	if (mem == NULL)
+	arr = malloc(nmemb * size);
+	if (arr == NULL)
 		return (NULL);
-	filler = mem;
-	for (index = 0; index < (size * nmemb); index++)
-		filler[index] = '\0';
-	return (mem);
+	for (i = 0; i < (nmemb * size); i++)
+		arr[i] = 0;
+	return (arr);
 }
