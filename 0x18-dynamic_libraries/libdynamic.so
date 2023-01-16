@@ -1,2 +1,3 @@
+#!/bin/bash
 gcc -c -wall -fpic *.c
 gcc -g -shared -o libdynamic.so *.o
