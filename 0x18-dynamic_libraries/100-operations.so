@@ -1,0 +1,3 @@
+gcc -wall -c -fpic o-isupper.c
+./o-isupper.c
+gcc -shared -o 100-operations-so o-isupper.o
