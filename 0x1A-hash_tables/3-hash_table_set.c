@@ -11,17 +11,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index = 0;
 	char *temporal_value = NULL;
 	hash_node_t *temporal = NULL, *new = NULL;
-	
 	if (!ht || !ht->array || !value)
 		return (0);
 	if (strlen(key) == 0 || !key)
 		return (0);
-	
 	temporal_value = strdup(value);
 	if (!temporal_value)
 		return (0);
 	index = key_index((unsigned char *)key, ht->size);
-
 	/* checks if a collision exists */
 
 	temporal = ht->array[index];
@@ -37,8 +34,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			temporal = temporal->next;
 		}
 	}
-		
-		/* If a collision doesn't exits, insert node */
+	/* If a collision doesn't exits, insert node */
 		
 		new = malloc(sizeof(hash_node_t));
 		if (!new)
